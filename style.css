@@ -1,0 +1,147 @@
+@font-face {
+  font-family: Hack;
+  src: url('/Hack-NF.ttf');
+  font-display: swap;
+}
+
+:root {
+  --primary: #acffc2;
+  --secodary: #afacff;
+  --default: #F1F1F1;
+  --font-size: 1rem;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh; /* -16px for the 8px margin */
+  background-color: #1a1a1a;
+  font-family: Hack, monospace;
+  margin: 0;
+  padding: .5em;
+  font-size: var(--font-size);
+  border: 8px solid var(--secodary);
+}
+
+main {
+  height: 100%;
+  --secodary: #afacff;
+  width: 100%;
+  overflow: auto;
+}
+
+main > div {
+  width: 100%;
+  min-width: 100%;
+  min-width: max-content;
+  padding: 2em;
+  /* pointer-events: none; */
+}
+
+/* CLI */
+
+form {
+  display: flex;
+  align-items: center;
+  gap: .2em;
+}
+
+label {
+  white-space: nowrap;
+  font-size: 0;
+}
+
+label span {
+  font-size: var(--font-size);
+}
+
+.cli--user {
+  color: var(--primary);
+}
+
+.cli--at, .cli--sign {
+  color: var(--default);
+}
+
+.cli--host {
+  color: var(--secodary);
+}
+
+input {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  color: var(--primary);
+  transform: translateY(1px);
+  padding: 0 .5em;
+  font-family: Hack, monospace;
+  font-size: var(--font-size);
+}
+
+/* Commandos */
+
+.command {
+  display: flex;
+  align-items: center;
+  gap: .2em;
+  margin-bottom: .5em;
+}
+
+.command > span {
+  font-size: 0;
+}
+
+.command > span span {
+  font-size: var(--font-size);
+}
+
+.command > p {
+  padding-left: .5em;
+  color: var(--primary);
+  margin: 0;
+}
+
+.echo {
+  white-space: pre;
+  margin: 0;
+  margin-bottom: .5em;
+  color: var(--default);
+}
+
+.echo a {
+  color: var(--default);
+}
+
+@media (max-width: 35em) {
+  :root {
+    --font-size: .8rem;
+  }
+}
+
+::selection {
+  color: var(--default);
+  background-color: var(--secodary);
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px
+}
+
+::-webkit-scrollbar-track {
+  background: var(--background);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secodary);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--primary)
+}
