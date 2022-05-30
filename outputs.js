@@ -80,22 +80,19 @@ Github: <a href="https://github.com/DaanKorver/catstagram">/catstagram</a>
 `
 
 const about = `
-        _..._
-      .'     '.      _
-     /    .-""-\   _/ \       Hi I am Daan Korver
-   .-|   /:.   |  |   |       I am a 21 y/o developer from the Netherlands
-   |  \  |:.   /.-'-./
-   | .-'-;:__.'    =/         I graduated Media college in 2020 as a Mediadeveloper
-   .'=  *=|     _.='          Currently studying FDND @ HvA
-  /   _.  |    ;
- ;-.-'|    \   |              My hobboies:
-/   | \    _\  _\             * Programming
-\__/'._;.  ==' ==\            * Working out
-         \    \   |           * Gaming
-         /    /   /           * Programming
-         /-._/-._/
-         \   \   \            I use arch btw
-          \_._/._/
+Hi I am Daan Korver
+I am a 21 y/o developer from the Netherlands
+
+I graduated Media college in 2020 as a Mediadeveloper
+Currently studying FDND @ HvA
+
+  My hobboies:
+* Programming
+* Working out
+* Gaming
+* Programming
+
+I use arch btw
 `
 
 export { banner, fetch, commands, projectlist, about }
