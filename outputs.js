@@ -15,8 +15,7 @@ I use arch btw
 
 Type 'help' to see a list of available commands.
 Type 'fetch' to display summary
-Type 'socials' to navigate to one of my socials
-
+Type 'projects' to view a list of my projects
 `
 
 const fetch = `
@@ -45,14 +44,12 @@ const commands = `
 Welcome! these are all of the available commands:
 
 about         Outputs an about me
+projects      Outputs some of my projects
 banner        Outputs the banner
 github        Outputs Github
 linkedin      Outputs linkedIn
 date          Show the date
 clear         Clears the terminal screen
-
-Coming soon =====================================
-projects      Outputs some of my projects
 `
 
 const projectlist = `
