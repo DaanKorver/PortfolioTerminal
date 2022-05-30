@@ -6,8 +6,8 @@ const banner = `
 ██████╔╝██║  ██║██║  ██║██║ ╚████║    ██║  ██╗╚██████╔╝██║  ██║ ╚████╔╝ ███████╗██║  ██║
 ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝  ╚═══╝  ╚══════╝╚═╝  ╚═╝
 
-Hi I am Daan Korver, a Web developer from Holland :)
-I am currently studying FDND@HvA
+Hi I am Daan Korver, a Web developer from the Netherlands :)
+I am currently studying FDND @ HvA
 I like to program, workout, play games and hangout
 Tinkering with Linux is a hobby of mine
 
@@ -79,4 +79,23 @@ Github: <a href="https://github.com/DaanKorver/catstagram">/catstagram</a>
 ==========================================================================
 `
 
-export { banner, fetch, commands, projectlist }
+const about = `
+        _..._
+      .'     '.      _
+     /    .-""-\   _/ \       Hi I am Daan Korver
+   .-|   /:.   |  |   |       I am a 21 y/o developer from the Netherlands
+   |  \  |:.   /.-'-./
+   | .-'-;:__.'    =/         I graduated Media college in 2020 as a Mediadeveloper
+   .'=  *=|     _.='          Currently studying FDND @ HvA
+  /   _.  |    ;
+ ;-.-'|    \   |              My hobboies:
+/   | \    _\  _\             * Programming
+\__/'._;.  ==' ==\            * Working out
+         \    \   |           * Gaming
+         /    /   /           * Programming
+         /-._/-._/
+         \   \   \            I use arch btw
+          \_._/._/
+`
+
+export { banner, fetch, commands, projectlist, about }

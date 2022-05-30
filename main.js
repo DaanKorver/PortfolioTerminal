@@ -1,6 +1,6 @@
 import './style.css'
 
-import { banner, fetch, commands, projectlist } from './outputs.js'
+import { banner, fetch, commands, projectlist, about } from './outputs.js'
 
 const prompt = document.querySelector('form > label')
 const terminal = document.querySelector('.history')
@@ -83,6 +83,9 @@ function handleCommand(command) {
 			break
 		case 'projects':
 			projects()
+			break
+		case 'about':
+			echo(about)
 			break
 		default:
 			echo(`Command not found: ${command.split(' ')[0]}`)
