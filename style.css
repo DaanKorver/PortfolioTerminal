@@ -6,8 +6,9 @@
 
 :root {
   --primary: #acffc2;
-  --secodary: #afacff;
+  --secondary: #afacff;
   --default: #F1F1F1;
+  --background: #1a1a1a;
   --font-size: 1rem;
 }
 
@@ -19,17 +20,16 @@
 
 body {
   height: 100vh; /* -16px for the 8px margin */
-  background-color: #1a1a1a;
+  background-color: var(--background);
   font-family: Hack, monospace;
   margin: 0;
   padding: .5em;
   font-size: var(--font-size);
-  border: 8px solid var(--secodary);
+  border: 8px solid var(--secondary);
 }
 
 main {
   height: 100%;
-  --secodary: #afacff;
   width: 100%;
   overflow: auto;
 }
@@ -68,7 +68,7 @@ label span {
 }
 
 .cli--host {
-  color: var(--secodary);
+  color: var(--secondary);
 }
 
 input {
@@ -80,6 +80,7 @@ input {
   padding: 0 .5em;
   font-family: Hack, monospace;
   font-size: var(--font-size);
+  text-transform: lowercase
 }
 
 /* Commandos */
@@ -105,14 +106,13 @@ input {
   margin: 0;
 }
 
-.echo {
-  white-space: pre;
+pre {
   margin: 0;
   margin-bottom: .5em;
   color: var(--default);
 }
 
-.echo a {
+pre a {
   color: var(--default);
 }
 
@@ -124,7 +124,7 @@ input {
 
 ::selection {
   color: var(--default);
-  background-color: var(--secodary);
+  background-color: var(--secondary);
 }
 
 /* Scrollbar */
@@ -139,7 +139,7 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--secodary);
+  background: var(--secondary);
 }
 
 ::-webkit-scrollbar-thumb:hover {

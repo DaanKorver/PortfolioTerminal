@@ -1,0 +1,41 @@
+.term {
+  --primary: #e1e1e1;
+  --secondary: #e1e1e1;
+  --default: #F1F1F1;
+  --background: #000000;
+}
+
+.light {
+  --primary: #db2d20;
+  --secondary: #01a0e4;
+  --default: #090300;
+  --background: #f7f7f7;
+}
+
+.belafonteday {
+  --primary: #426a79;
+  --secondary: #97522c;
+  --default: #20111b;
+  --background: #d5ccba;
+}
+
+.belafontenight {
+  --primary: #be100e;
+  --secondary: #eaa549;
+  --default: #d5ccba;
+  --background: #20111b;
+}
+
+.bim {
+  --primary: #f557a0;
+  --secondary: #a9ee55;
+  --default: #f5eeec;
+  --background: #012849;
+}
+
+.broadcast {
+  --primary: #da4939;
+  --secondary: #519f50;
+  --default: #ffffff;
+  --background: #323232;
+}

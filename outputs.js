@@ -50,6 +50,7 @@ github        Outputs Github
 linkedin      Outputs linkedIn
 date          Show the date
 clear         Clears the terminal screen
+theme         Change themes
 `
 
 const projectlist = `
@@ -58,7 +59,7 @@ Here is a small list of some projects I did.
 ==========================================================================
 id: 0
 Name: Catstagram
-Description: A instagram clone but only for cats (using AI to check that)
+Description: An instagram clone but only for cats (using AI to check that)
 Tags: HTML, CSS, JS, Sveltekit, TensorFlow
 Link: <a href="https://github.com/DaanKorver/catstagram">catstagram.xyz</a>
 Github: <a href="https://github.com/DaanKorver/catstagram">/catstagram</a>
@@ -86,7 +87,7 @@ I am a 21 y/o developer from the Netherlands
 I graduated Media college in 2020 as a Mediadeveloper
 Currently studying FDND @ HvA
 
-  My hobboies:
+  My hobbies:
 * Programming
 * Working out
 * Gaming
@@ -95,4 +96,22 @@ Currently studying FDND @ HvA
 I use arch btw
 `
 
-export { banner, fetch, commands, projectlist, about }
+const listThemes = themes => {
+	return themes.reduce((curr, prev) => curr + `\n${prev}`)
+}
+
+const themeUsage = `
+Usage: theme &lt;command&gt; [&lt;args&gt;]
+
+Commands: 
+  set &lt;theme&gt;
+    Set the theme for the terminal
+
+  get
+    Gets the current theme
+
+  list
+    Lists all of the available themes.
+`
+
+export { banner, fetch, commands, projectlist, about, themeUsage, listThemes }
