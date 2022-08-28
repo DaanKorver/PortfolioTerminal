@@ -9,6 +9,9 @@ const cliLine = document.querySelector('form')
 const cli = document.querySelector('form > input')
 const main = document.querySelector('main')
 
+const getAge = birthDate =>
+	Math.floor((new Date() - new Date(birthDate).getTime()) / 3.15576e10)
+
 let history = []
 let historyIndex = history.length
 
@@ -86,7 +89,7 @@ function handleCommand(command) {
 			echo(projectlist)
 			break
 		case 'about':
-			echo(about)
+			echo(about(getAge('2000-08-29')))
 			break
 		case 'theme':
 			theme(command)

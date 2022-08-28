@@ -98,9 +98,10 @@ Want to see more?
 Checkout my <a target="_blank" href="https://github.com/DaanKorver">Github</a>
 `
 
-const about = `
+const about = age =>
+	`
 Hi I am Daan Korver
-I am a 21 y/o developer from the Netherlands
+I am a ${age} y/o developer from the Netherlands
 
 I graduated Media college in 2020 as a Mediadeveloper
 Currently studying FDND @ HvA
